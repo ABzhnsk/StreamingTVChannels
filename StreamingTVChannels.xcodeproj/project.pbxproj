@@ -12,6 +12,10 @@
 		B17856EA292FFC86005695C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B17856E9292FFC86005695C1 /* Assets.xcassets */; };
 		B17856ED292FFC86005695C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17856EB292FFC86005695C1 /* LaunchScreen.storyboard */; };
 		B17856FA292FFEF3005695C1 /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17856F9292FFEF3005695C1 /* StreamViewController.swift */; };
+		B178570029300208005695C1 /* Channels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17856FF29300208005695C1 /* Channels.swift */; };
+		B178570229300362005695C1 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B178570129300362005695C1 /* NetworkRequest.swift */; };
+		B17857062930040B005695C1 /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17857052930040B005695C1 /* ServerError.swift */; };
+		B1785708293005E4005695C1 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1785707293005E4005695C1 /* NetworkDataFetch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		B17856EC292FFC86005695C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B17856EE292FFC86005695C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B17856F9292FFEF3005695C1 /* StreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
+		B17856FF29300208005695C1 /* Channels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channels.swift; sourceTree = "<group>"; };
+		B178570129300362005695C1 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		B17857052930040B005695C1 /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		B1785707293005E4005695C1 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			children = (
 				B17856FD2930010B005695C1 /* App */,
 				B17856FC293000F3005695C1 /* Network */,
+				B17856FE293001F2005695C1 /* Model */,
 				B17856FB293000E9005695C1 /* View */,
 				B17856E9292FFC86005695C1 /* Assets.xcassets */,
 				B17856EB292FFC86005695C1 /* LaunchScreen.storyboard */,
@@ -75,6 +84,9 @@
 		B17856FC293000F3005695C1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B178570129300362005695C1 /* NetworkRequest.swift */,
+				B17857052930040B005695C1 /* ServerError.swift */,
+				B1785707293005E4005695C1 /* NetworkDataFetch.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -86,6 +98,14 @@
 				B17856E2292FFC83005695C1 /* SceneDelegate.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		B17856FE293001F2005695C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B17856FF29300208005695C1 /* Channels.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,8 +179,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B17856E1292FFC83005695C1 /* AppDelegate.swift in Sources */,
+				B178570029300208005695C1 /* Channels.swift in Sources */,
+				B1785708293005E4005695C1 /* NetworkDataFetch.swift in Sources */,
 				B17856E3292FFC83005695C1 /* SceneDelegate.swift in Sources */,
 				B17856FA292FFEF3005695C1 /* StreamViewController.swift in Sources */,
+				B178570229300362005695C1 /* NetworkRequest.swift in Sources */,
+				B17857062930040B005695C1 /* ServerError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
