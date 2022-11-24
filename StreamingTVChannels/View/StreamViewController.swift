@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StreamViewController.swift
 //  StreamingTVChannels
 //
 //  Created by Anna Buzhinskaya on 24.11.2022.
@@ -7,13 +7,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StreamViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
     }
 
-
 }
-

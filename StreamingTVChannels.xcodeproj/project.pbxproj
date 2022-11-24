@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		B17856E1292FFC83005695C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17856E0292FFC83005695C1 /* AppDelegate.swift */; };
 		B17856E3292FFC83005695C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17856E2292FFC83005695C1 /* SceneDelegate.swift */; };
-		B17856E5292FFC83005695C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17856E4292FFC83005695C1 /* ViewController.swift */; };
-		B17856E8292FFC83005695C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17856E6292FFC83005695C1 /* Main.storyboard */; };
 		B17856EA292FFC86005695C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B17856E9292FFC86005695C1 /* Assets.xcassets */; };
 		B17856ED292FFC86005695C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B17856EB292FFC86005695C1 /* LaunchScreen.storyboard */; };
+		B17856FA292FFEF3005695C1 /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B17856F9292FFEF3005695C1 /* StreamViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B17856DD292FFC83005695C1 /* StreamingTVChannels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamingTVChannels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B17856E0292FFC83005695C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B17856E2292FFC83005695C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B17856E4292FFC83005695C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B17856E7292FFC83005695C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B17856E9292FFC86005695C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B17856EC292FFC86005695C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B17856EE292FFC86005695C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17856F9292FFEF3005695C1 /* StreamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,38 @@
 		B17856DF292FFC83005695C1 /* StreamingTVChannels */ = {
 			isa = PBXGroup;
 			children = (
-				B17856E0292FFC83005695C1 /* AppDelegate.swift */,
-				B17856E2292FFC83005695C1 /* SceneDelegate.swift */,
-				B17856E4292FFC83005695C1 /* ViewController.swift */,
-				B17856E6292FFC83005695C1 /* Main.storyboard */,
+				B17856FD2930010B005695C1 /* App */,
+				B17856FC293000F3005695C1 /* Network */,
+				B17856FB293000E9005695C1 /* View */,
 				B17856E9292FFC86005695C1 /* Assets.xcassets */,
 				B17856EB292FFC86005695C1 /* LaunchScreen.storyboard */,
 				B17856EE292FFC86005695C1 /* Info.plist */,
 			);
 			path = StreamingTVChannels;
+			sourceTree = "<group>";
+		};
+		B17856FB293000E9005695C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B17856F9292FFEF3005695C1 /* StreamViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B17856FC293000F3005695C1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B17856FD2930010B005695C1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B17856E0292FFC83005695C1 /* AppDelegate.swift */,
+				B17856E2292FFC83005695C1 /* SceneDelegate.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +148,6 @@
 			files = (
 				B17856ED292FFC86005695C1 /* LaunchScreen.storyboard in Resources */,
 				B17856EA292FFC86005695C1 /* Assets.xcassets in Resources */,
-				B17856E8292FFC83005695C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B17856E5292FFC83005695C1 /* ViewController.swift in Sources */,
 				B17856E1292FFC83005695C1 /* AppDelegate.swift in Sources */,
 				B17856E3292FFC83005695C1 /* SceneDelegate.swift in Sources */,
+				B17856FA292FFEF3005695C1 /* StreamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B17856E6292FFC83005695C1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B17856E7292FFC83005695C1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B17856EB292FFC86005695C1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,9 +304,9 @@
 				INFOPLIST_FILE = StreamingTVChannels/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +332,9 @@
 				INFOPLIST_FILE = StreamingTVChannels/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
